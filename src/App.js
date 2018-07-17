@@ -23,7 +23,7 @@ class App extends React.Component{
     getItems = async (e) => {
         e.preventDefault();
         const searchText =e.target.elements.searchText.value;
-        const api_call = await fetch(`http://api.walmartlabs.com/v1/search?query=${searchText}&format=json&apiKey=${API_KEY}`);
+        const api_call = await fetch(`https://api.walmartlabs.com/v1/search?query=${searchText}&format=json&apiKey=${API_KEY}`);
         console.log(JSON.stringify(api_call));
         if (api_call.status == 200) {
             console.log("API fetched . . . working on data");
@@ -63,7 +63,7 @@ class App extends React.Component{
   }
     getRecommendations = async (params,e) => {
         const itemId = params;
-        const apiCall = await fetch(`http://api.walmartlabs.com/v1/nbp?apiKey=${API_KEY}&format=json&itemId=${params}`);
+        const apiCall = await fetch(`https://api.walmartlabs.com/v1/nbp?apiKey=${API_KEY}&format=json&itemId=${params}`);
 
         const recommendationData = await apiCall.json();
         this.setState(
