@@ -70,4 +70,4 @@ Firefox : [CORS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/cors-
 ```
 ## Screenshots
 
-![Alt text](./components/screenshots/img.jpg?raw=true "ScreenShot 1")
+![Alt text](./components/screenshots/S1.png?raw=true "ScreenShot 1")
