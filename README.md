@@ -40,7 +40,7 @@ The build is minified and the filenames include the hashes.<br>
 ## If fail with the CORS error
 If it is not able to fetch anything from the WalMart API and displaying the following error :
 ```angularjs
-Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://api.walmartlabs.com/v1/search?query=Apple&format=json&apiKey=kqng3chq485br36pp8aef4ds. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing).
+Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://api.walmartlabs.com/v1/search?query=Apple&format=json&apiKey={API_KEY}. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing).
 
 ```
 Then install the CORS plugin available in Google Chrome / Firefox marklet place and re run the app after enabling the CORS plugin.
