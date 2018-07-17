@@ -5,10 +5,12 @@ import Products from "./components/Products";
 import Error from"./components/Error";
 import {Navbar} from 'react-bootstrap';
 import logo1 from "./walmart-logo/wmt_h_r_c.png";
+import Item from "./components/Item";
 
 
 
 const API_KEY = "kqng3chq485br36pp8aef4ds";
+var initial = true;
 class App extends React.Component{
 
   state = {
@@ -18,10 +20,9 @@ class App extends React.Component{
     error:undefined
 
   }
-
     getItems = async (e) => {
         e.preventDefault();
-        const searchText = e.target.elements.searchText.value;
+        const searchText =e.target.elements.searchText.value;
         const api_call = await fetch(`http://api.walmartlabs.com/v1/search?query=${searchText}&format=json&apiKey=${API_KEY}`);
         console.log(JSON.stringify(api_call));
         if (api_call.status == 200) {
@@ -54,12 +55,12 @@ class App extends React.Component{
            this.setState({
                itemId: undefined,
                itemList: undefined,
+               rItemList:undefined,
                error: "Please Enter the values"
             });
         }
 
   }
-
     getRecommendations = async (params,e) => {
         const itemId = params;
         const apiCall = await fetch(`http://api.walmartlabs.com/v1/nbp?apiKey=${API_KEY}&format=json&itemId=${params}`);
@@ -73,7 +74,6 @@ class App extends React.Component{
     }
 
   render(){
-
     return(
       <div>
           <Navbar>
@@ -90,7 +90,6 @@ class App extends React.Component{
             <div className="main">
             <div>
               <div className="row">
-
                   <Error error={this.state.error} />
                   <div className="container" >
                   <ItemList rItemList={this.state.rItemList} itemList={this.state.itemList} />
