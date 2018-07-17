@@ -60,7 +60,7 @@ Firefox : [CORS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/cors-
  6. 10 recommendations, which you can again select to open as new Popup for Item description.
  7. Clean, fluid and responsive UI same as Walmart.com
  8. Handling the API failure, so that app does not crash
- 9. Handling if the used is not inputting the blank in the search text box.
+ 9. Handling if the search text box is left blank.
 
  
 ```
