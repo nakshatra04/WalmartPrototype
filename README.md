@@ -69,5 +69,18 @@ Firefox : [CORS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/cors-
  
 ```
 ## Screenshots
+Figure showing the search result for apple (Medium screen)
+![Alt text](./src/screenshots/S1.png?raw=true "ScreenShot 1")
 
-![Alt text](./tree/master/src/screenshots/S1.png?raw=true "ScreenShot 1")
+Figure showing the search result for apple (Large screen)
+![Alt text](./src/screenshots/S2.png?raw=true "ScreenShot 2")
+
+Figure showing the product description and recommendation items as per the item.
+![Alt text](./src/screenshots/S3.png?raw=true "ScreenShot 3")
+
+Figure showing the minute details incorporated to make user exp good
+![Alt text](./src/screenshots/S4.png?raw=true "ScreenShot 4")
+
+Figure showinh the handling of the service failure.
+![Alt text](./src/screenshots/S5.png?raw=true "ScreenShot 5")
+
