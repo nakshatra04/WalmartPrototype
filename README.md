@@ -37,8 +37,8 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br>
 
-##If fail with the CORS error
-If it is not able to fetch anuything from the WqlMart API and displaying the following error :
+## If fail with the CORS error
+If it is not able to fetch anything from the WalMart API and displaying the following error :
 ```angularjs
 Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://api.walmartlabs.com/v1/search?query=Apple&format=json&apiKey=kqng3chq485br36pp8aef4ds. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing).
 
@@ -49,7 +49,7 @@ Chrome : [Allow-Control-Allow-Origin](https://chrome.google.com/webstore/detail/
 
 Firefox : [CORS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/)
 
-##Functionality Implementation
+## Functionality Implementation
 
 1. Implemented fetching of 10 items using Walmart search API
 2. Implemented the popup for any item click to show the details of the item.
